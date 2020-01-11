@@ -26,7 +26,7 @@
                 ->init($product, 'product_thumbnail_image')->getUrl();
             echo '<div class="encomagestore-random"></dic><div><a href="' . $product->getProductUrl() . '"><img src="' . $imageUrl . '" /></a></div><div>';
             echo '<p><a href="' . $product->getProductUrl() . '">' . $product->getName() . '</a></p>';
-            echo '<p><strong>$ ' . number_format( $product->getPrice(), 2, '.', ',' ) . '</strong></p></div></div>';
+            echo '<p><strong>$ ' . number_format( $product->getPrice(), 3, '.', ',' ) . '</strong></p></div></div>';
         }
         ?>
     </div>
