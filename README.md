@@ -20,7 +20,7 @@ Our module has name `Encomagestore_CustomWidget`. It works on Magento 2 and disp
 - Step 6: Create a widget temlate file `samplewidget.phtml`.
 - Step 7: Create a widget block class `SampleWidget.php`.
 - Step 8: Create frontend layout with `default.xml` and styling with `random.css`.
-- Step 9: Flush cache.
+- Step 9: Flush cache with `php bin/magento cach:clean` command.
 
 
 If you have followed all above steps, you will see the title 'Random Products' in left additional sidebar and three random simple products from the site store with  an image, a name and a price in each of them.
