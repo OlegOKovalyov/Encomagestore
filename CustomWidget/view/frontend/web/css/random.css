@@ -1,0 +1,14 @@
+.columns .sidebar-additional .encomagestore-title {
+    margin-bottom: 0;
+}
+
+.encomagestore-random {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.encomagestore-random img {
+    width: 75px;
+}

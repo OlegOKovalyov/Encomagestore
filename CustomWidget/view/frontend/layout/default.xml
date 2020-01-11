@@ -1,0 +1,11 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Encomagestore_CustomWidget::css/random.css"/>
+    </head>
+    <body>
+        <referenceContainer name="div.sidebar.additional">
+            <block class="Encomagestore\CustomWidget\Block\Widget\Samplewidget" name="Samplewidget" template="Encomagestore_CustomWidget::widget/samplewidget.phtml">
+            </block>
+        </referenceContainer>
+    </body>
+</page>

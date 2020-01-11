@@ -1,0 +1,33 @@
+<?php if($block->getData('widgettitle')): ?>
+    <div class="encomagestore-title widget">
+        <div class="block-title">
+            <strong role="heading"><?php echo $block->getData('widgettitle'); ?></strong>
+        </div>
+    </div>
+<?php endif; ?>
+<?php if($block->getTitle('widgettitle')): ?>
+<div class="encomagestore-title widget">
+    <div class="block-title">
+        <strong role="heading"><?php echo $block->getTitle(); ?></strong>
+    </div>
+</div>
+<?php endif; ?>
+<?php if($block->getData('widgetcontent')): ?>
+    <div class="block-content encomagestore-content">
+        <div class="block-content-text"><?php echo $block->getData('widgetcontent'); ?></div>
+    </div>
+<?php endif; ?>
+<?php if($block->getProductCollection()): ?>
+    <div class="block-content-body">
+        <?php
+        $productCollection = $block->getProductCollection();
+        foreach ($productCollection as $product) {
+            $imageUrl = $this->imageHelperFactory->create()
+                ->init($product, 'product_thumbnail_image')->getUrl();
+            echo '<div class="encomagestore-random"></dic><div><a href="' . $product->getProductUrl() . '"><img src="' . $imageUrl . '" /></a></div><div>';
+            echo '<p><a href="' . $product->getProductUrl() . '">' . $product->getName() . '</a></p>';
+            echo '<p><strong>$ ' . number_format( $product->getPrice(), 2, '.', ',' ) . '</strong></p></div></div>';
+        }
+        ?>
+    </div>
+<?php endif; ?>
