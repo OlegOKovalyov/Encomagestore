@@ -17,7 +17,7 @@ Our module has name `Encomagestore_CustomWidget`. It works on Magento 2 and disp
     `bin/magento module:enable Encomagestore_CustomWidget` and 
     `php bin/magento setup:upgrade` 
     console commands.
-- Step 6: Create a widget temlate file `samplewidget.phtml`.
+- Step 6: Create a widget template file `samplewidget.phtml`.
 - Step 7: Create a widget block class `SampleWidget.php`.
 - Step 8: Create frontend layout with `default.xml` and styling with `random.css`.
 - Step 9: Flush cache with `php bin/magento cach:clean` command.
